@@ -8,7 +8,8 @@ if test "$FZF_LEGACY_KEYBINDINGS" -eq 1
 
     # personal keybindings
     bind \cs '__fzf_find_file'
-    bind \ch '__fzf_reverse_isearch'
+    # removed 04/15/19 bc interfered w another kb
+    #bind \ch '__fzf_reverse_isearch'
     bind \eo '__fzf_open'
     bind \cj '__fzf_cd'
 
