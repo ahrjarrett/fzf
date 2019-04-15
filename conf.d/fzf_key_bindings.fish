@@ -1,12 +1,16 @@
 if test "$FZF_LEGACY_KEYBINDINGS" -eq 1
     #bind \ct '__fzf_find_file'
-    bind \cs '__fzf_find_file'
-    bind \cr '__fzf_reverse_isearch'
+    #bind \cr '__fzf_reverse_isearch'
     bind \ec '__fzf_cd'
     bind \eC '__fzf_cd --hidden'
     #bind \cg '__fzf_open'
-    bind \eo '__fzf_open'
     bind \co '__fzf_open --editor'
+
+    # personal keybindings
+    bind \cs '__fzf_find_file'
+    bind \ch '__fzf_reverse_isearch'
+    bind \eo '__fzf_open'
+    bind \cj '__fzf_cd'
 
     if bind -M insert >/dev/null 2>/dev/null
         bind -M insert \ct '__fzf_find_file'
